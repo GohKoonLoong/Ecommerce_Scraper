@@ -1,0 +1,28 @@
+{
+    "name": "E-Commerce Data Extractor",
+    "description": "Extract product data from Shopee, TikTok, and Lazada.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "scripting",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://shopee.com.my/*",
+        "https://*.tiktok.com/*",
+        "https://*.lazada.com.my/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://shopee.com.my/*",
+                "https://*.tiktok.com/*",
+                "https://*.lazada.com.my/*"
+            ],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
