@@ -38,7 +38,7 @@ This project is a Chrome Extension that extracts product data from e-commerce pl
 
 ## Code Overview
 ### 1. Content Script (`content.js`):
-+ Responsible for extracting data driectly from web page.
++ Responsible for extracting data directly from web page.
 + Dynamically determines the platform (Shopee, Tiktok, or Lazada) based on the URL.
 + Extracts specific elements such as product name, price and description using DOM queries.
  
